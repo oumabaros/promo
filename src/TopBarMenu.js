@@ -1,3 +1,4 @@
+//Topbar Menu component
 import React, { Component } from 'react';
 
 export class TopBarMenu extends Component {

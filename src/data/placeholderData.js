@@ -1,3 +1,4 @@
+//mock data
 export const promoData = {
   promos: [
     {

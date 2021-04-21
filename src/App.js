@@ -6,43 +6,52 @@ import { promoData } from './data/placeholderData';
 import React, { Component } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
+//Main calss app
 class App extends Component {
   constructor() {
     super();
-
+    //Initialize variables
     this.state = {
       search: null,
       value: '',
       copied: false,
       activate: 'Activate Bonus',
+      //initialize proms[] with mock data from file
       proms: promoData.promos,
     };
   }
+  //function to initialize 'search' variable with search text.
   searchSpace = (event) => {
     let keyword = event.target.value;
     this.setState({ search: keyword });
   };
 
   render() {
+    //function to reset screen after search. sets 'search' to null
     const handleSubmit = (e) => {
       e.preventDefault();
       document.getElementById('txtSearch').value = '';
       this.setState({ search: null });
     };
+    //function to activate bonus by setting to true or false by toggling 'Status'
     const activateBonus = (e) => {
       const updatedProms = [...this.state.proms];
+      //if 'status=true then set status=false and vice versa
       updatedProms.map((item) =>
         item.id.toString() === e.target.id
           ? Object.assign(item, { status: !item.status })
           : item,
       );
+      //set value of promos[] to the the result of search
       this.setState({ proms: updatedProms });
-      console.log('Status is: ' + this.state.proms.map((i) => i.status));
+      //log values of promos[] on the console output to reflect changes
+      console.log([...this.state.proms]);
     };
-
+    //display 'No Promos' if promos[] is empty
     if (this.state.proms == null || this.state.proms.length === 0) {
       return <h5>No Promos</h5>;
     }
+    //function to filter and populate elements with data
     const items = this.state.proms
       .filter((data) => {
         if (this.state.search == null) return data;
@@ -115,7 +124,7 @@ class App extends Component {
           </div>
         );
       });
-
+    //render data
     return (
       <div className="outer">
         <SideBar />
@@ -146,6 +155,7 @@ class App extends Component {
           </div>
         </div>
         {items}
+
         <Footer />
       </div>
     );
