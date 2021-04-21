@@ -1,0 +1,313 @@
+.outer {
+  /* 1280 */
+
+  position: relative;
+  width: 1280px;
+  height: 947px;
+
+  /* GrayBlue / MainBG #F5F7FA */
+
+  background: #f5f7fa;
+}
+.Services {
+  /* Services */
+  position: relative;
+  width: 150px;
+  height: 167px;
+  left: 112px;
+  top: 70px;
+  /* Headline / 1, Light, 39pt */
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 39px;
+  line-height: 46px;
+  /* identical to box height */
+  color: #262626;
+}
+.Filter {
+  position: relative;
+  width: 600px;
+  height: 20px;
+  left: 0px;
+  top: 20px;
+}
+.FilterText {
+  /* Filter */
+  position: absolute;
+  width: 35px;
+  height: 17px;
+  left: 0px;
+  top: 0px;
+  /* Special / Label & Tag, Regular, 11pt */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #7d7d7d;
+  border-radius: 3px;
+}
+.Glow {
+  /* Body */
+  position: absolute;
+  width: 300px;
+  border-radius: 4px;
+  height: 48px;
+  left: 0px;
+  right: 0px;
+  top: 90px;
+  background: #ffffff;
+  /* Blue 1 */
+  border: 1px solid #2f80ed;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.Reset {
+  /* reset */
+  position: absolute;
+  width: 149px;
+  height: 48px;
+  left: 420px;
+  top: 90px;
+}
+.ResetBody {
+  /* Body */
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  /* GrayBlue / MainBG #F5F7FA */
+  background: #f5f7fa;
+  /* GrayBlue / MainStroke #CFD2D9 */
+  border: 1px solid #cfd2d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.ResetContent {
+  /* Reset */
+  position: absolute;
+  width: 48px;
+  height: 28px;
+  left: calc(50% - 48px / 2 + 0.5px);
+  top: 10px;
+  /* Body / Lead L, Regular, 19pt */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 28px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* GrayPure / MainText #262626 */
+  color: #262626;
+}
+.Cd {
+  position: relative;
+  left: 55px;
+  top: 70px;
+}
+.Footer {
+  /* Footer */
+  position: absolute;
+  width: 1200px;
+  height: 52px;
+  left: 80px;
+  top: 895px;
+}
+.FooterDashboard {
+  position: absolute;
+  width: 1200px;
+  height: 52px;
+  left: 80px;
+  top: 895px;
+}
+
+.Solid {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: -nan;
+  bottom: -nan;
+
+  /* GrayPure / #E9E9E9 */
+
+  border: 1px solid #e9e9e9;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.SolidDivider {
+  /* Solid Divider + */
+  position: absolute;
+  height: 0px;
+  left: 32px;
+  right: 30px;
+  top: 1px;
+}
+.LanguageMenu {
+  /* Language Menu */
+  position: absolute;
+  visibility: hidden;
+  width: 117px;
+  height: 114px;
+  right: 5px;
+  top: 25px;
+}
+.SectionStatic {
+  /* Section Static */
+  position: absolute;
+  visibility: hidden;
+  left: 44.44%;
+  right: 27.35%;
+  top: 0%;
+  bottom: 86.21%;
+}
+.Pyc {
+  /* Рус */
+
+  position: absolute;
+  width: 26px;
+  height: 17px;
+  left: 3px;
+  top: 0px;
+
+  /* Headline / 7, Uppercase, 13pt */
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  /* GrayBlue / DarkBG#1B1D29 */
+
+  color: #1b1d29;
+}
+#SideBarMenuCollapsed {
+  /* Sidebar Menu Collapsed + */
+  position: absolute;
+  width: 80px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+#TopBarMenu {
+  /* Top Bar Menu + */
+  position: absolute;
+  width: 1200px;
+  height: 80px;
+  left: 80px;
+  top: 0px;
+
+  background: #ffffff;
+}
+.Bg {
+  /* Bg */
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: #ffffff;
+}
+.Balance {
+  position: absolute;
+  width: 87px;
+  height: 46px;
+  left: 32px;
+  top: 18px;
+}
+.BalanceText {
+  /* Balance */
+  position: absolute;
+  width: 47px;
+  height: 20px;
+  left: 32px;
+  top: calc(50% - 20px / 2 - 12px);
+  /* Body / Body S, Regular, 13 pt */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  /* GrayPure / #7D7D7D */
+  color: #7d7d7d;
+}
+.BalanceAmount {
+  /* 213 920 $ */
+  position: absolute;
+  width: 87px;
+  height: 26px;
+  left: 32px;
+  top: calc(50% - 26px / 2 + 11px);
+  /* Headline / 4, Regular, 19pt */
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 26px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  /* GrayPure / MainText #262626 */
+  color: #262626;
+}
+.WillBePaid {
+  /* Will Be Paid */
+  position: absolute;
+  width: 87px;
+  height: 46px;
+  left: 143px;
+  top: 18px;
+}
+.Payout {
+  /* Payout */
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  left: 143px;
+  top: calc(50% - 20px / 2 - 12px);
+  /* Body / Body S, Regular, 13 pt */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  /* GrayPure / #7D7D7D */
+  color: #7d7d7d;
+}
+.PayoutAmount {
+  /* 159 465 $ */
+  position: absolute;
+  width: 87px;
+  height: 26px;
+  left: 143px;
+  top: calc(50% - 26px / 2 + 11px);
+  /* Headline / 4, Regular, 19pt */
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 26px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  /* GrayPure / MainText #262626 */
+  color: #262626;
+}
+
